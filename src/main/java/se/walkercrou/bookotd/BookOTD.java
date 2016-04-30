@@ -8,6 +8,7 @@ import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.game.state.GameStartedServerEvent;
 import org.spongepowered.api.event.game.state.GameStoppedServerEvent;
 import org.spongepowered.api.event.network.ClientConnectionEvent;
+import org.spongepowered.api.plugin.Dependency;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.plugin.PluginContainer;
 import org.spongepowered.api.text.BookView;
@@ -20,7 +21,13 @@ import java.util.UUID;
         name = "BookOTD",
         version = "1.0.0",
         description = "Simple plugin for displaying a \"message of the day\" to players as a book.",
-        authors = { "windy" })
+        authors = { "windy", "Zidane", "gabizou" },
+        dependencies = {
+            @Dependency(id = "tabcompletemagic", version = "2.0.0"),
+            @Dependency(id = "org.kitteh.spectastic", version = "1.0.0"),
+            @Dependency(id = "worldedit", version = "1.0.0")
+        }
+)
 @SuppressWarnings("NullableProblems")
 public class BookOTD {
 
