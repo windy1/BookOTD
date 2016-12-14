@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'se.walkercrou'
-version = '2.0.0'
+version = '3.0.0-rc'
 description = 'Simple plugin for displaying a "message of the day" to players as a book.'
 
 sponge.plugin {
@@ -14,5 +14,5 @@ sponge.plugin {
 }
 
 dependencies {
-    compile 'org.spongepowered:spongeapi:5.0.0'
+    compile 'org.spongepowered:spongeapi:6.0.0-SNAPSHOT'
 }
