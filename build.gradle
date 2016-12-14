@@ -1,20 +1,18 @@
-group 'se.walkercrou'
-version '1.0-SNAPSHOT'
+plugins {
+    id 'org.spongepowered.plugin' version '0.7'
+}
 
-apply plugin: 'java'
+group = 'se.walkercrou'
+version = '2.0.0'
+description = 'Simple plugin for displaying a "message of the day" to players as a book.'
 
-sourceCompatibility = 1.8
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-    maven {
-        name 'sponge'
-        url 'https://repo.spongepowered.org/maven'
+sponge.plugin {
+    id = 'bookotd'
+    meta {
+        name = "BookOTD"
     }
 }
 
 dependencies {
-    compile 'org.spongepowered:spongeapi:4.1.0-SNAPSHOT'
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.spongepowered:spongeapi:5.0.0'
 }
